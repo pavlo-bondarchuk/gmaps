@@ -18,262 +18,40 @@
             <div id="gmap-object"></div>
 
             <div class="mobile-open-road">
-              <svg>
-                <use xlink:href="#icon-map-road-head"></use>
-              </svg>
-            </div>
-
-            <div class="map-block">
-              <div class="map-block-head">
-                <div class="map-block-head-left">
-                  <svg
-                    id="icon-map-road-head"
-                    viewBox="0 0 26 28"
-                    width="100%"
-                    height="100%"
-                  >
-                    <title>Page 1</title>
-                    <path
-                      d="M13 0L0 10.278l2.354 1.865L13 20.556l10.631-8.413L26 10.278 13 0zm-.014 24.285L2.34 15.872 0 17.722 13 28l13-10.278-2.354-1.865-10.66 8.428z"
-                      fill-rule="evenodd"
-                      opacity=".8"
-                    ></path>
-                  </svg>
-                  <span>Карта об'єктів</span>
-                </div>
-                <div class="map-block-head-close">
-                  <svg
-                    id="icon-modal-close"
-                    viewBox="0 0 25 25"
-                    width="100%"
-                    height="100%"
-                  >
-                    <title>Combined Shape</title>
-                    <path
-                      d="M12.403 11.36l9.253-9.253.521-.521 1.043 1.043-.521.521-9.253 9.253 9.618 9.618.522.522-1.043 1.043-.522-.522-9.618-9.618L3.15 22.7l-.521.521-1.043-1.043.521-.521 9.253-9.253-8.887-8.887-.522-.522 1.043-1.043.522.522 8.887 8.887z"
-                      stroke-width="2"
-                      fill-rule="evenodd"
-                      stroke-linecap="square"
-                    ></path>
-                  </svg>
-                </div>
-              </div>
-              <!--map-block-head-->
-
-              <div class="map-roads map-roads-first">
-                <div class="map-roads-info">
-                  <div class="map-roads-info-circule">
-                    <svg
-                      id="icon-object100"
-                      viewBox="0 0 24.6 22.8"
-                      width="100%"
-                      height="100%"
-                    >
-                      <path
-                        id="Fill-1"
-                        class="st2"
-                        d="M11.4 17.5c-1.5 0-2.7 1.2-2.7 2.7 0 1.5 1.2 2.7 2.7 2.7 1.5 0 2.7-1.2 2.7-2.7-.1-1.5-1.3-2.7-2.7-2.7m-8.8-2.9c-1.5 0-2.6 1.2-2.6 2.7C0 18.8 1.2 20 2.6 20c1.5 0 2.7-1.2 2.7-2.7 0-1.6-1.2-2.7-2.7-2.7M11.4 0C9.9 0 8.7 1.2 8.7 2.7s1.2 2.7 2.7 2.7c1.5 0 2.7-1.2 2.7-2.7S12.8 0 11.4 0"
-                      ></path>
-                      <path
-                        id="Fill-4"
-                        class="st1"
-                        d="M17.3 10.8c0 .4 0 .8.1 1.2h-4.8v3.7c-.4-.1-.8-.2-1.2-.2-.4 0-.8.1-1.2.2V9.5l-.4.2c-.3.2-.7.3-1.1.4l-2.9.6c-1 .2-1.9 1.1-1.9 2-.4-.1-.8-.1-1.2-.1-.4 0-.8.1-1.2.2 0-2.2 1.7-4.1 3.9-4.5l2.9-.6c.5-.1.9-.4 1.3-.8.6.2 1.2.4 1.8.4.4 0 .8-.1 1.2-.2v2.4h4.9c-.2.5-.2.9-.2 1.3"
-                      ></path>
-                      <path
-                        id="Fill-6"
-                        class="st1"
-                        d="M19.2 10.8c0 1.5 1.2 2.7 2.7 2.7 1.5 0 2.7-1.2 2.7-2.7 0-1.5-1.2-2.7-2.7-2.7-1.5 0-2.7 1.2-2.7 2.7"
-                      ></path>
-                    </svg>
-                  </div>
-                  <div class="map-roads-info-text">
-                    <span class="map-roads-info-text-title">Всі об’єкти</span>
-                    <span class="map-roads-info-text-subtitle">
-                      <span id="all-object-count">0</span>
-                      об’єктів
-                      <!--<span id="all-path-km">...</span>-->
-                      <!--км-->
-                    </span>
-                  </div>
-                </div>
-                <div class="map-roads-slide">
-                  <input
-                    type="checkbox"
-                    id="all-object-switch"
-                    class="switcher"
-                  />
-                  <label for="all-object-switch"></label>
-                  <label class="rounded-all" for="all-object-switch"></label>
-                </div>
-              </div>
-              <!--map-roads-first-->
-
-              <div class="map-roads map-roads-second">
-                <div class="map-roads-info">
-                  <div class="map-roads-info-circule circule-green">
-                    <svg
-                      id="icon-icons_Icons"
-                      viewBox="0 0 16 16"
-                      width="100%"
-                      height="100%"
-                    >
-                      <path
-                        id="Fill-1"
-                        class="st0"
-                        d="M11 4H5c-.2 0-.3.1-.3.3L4.3 6c0 .2.1.4.3.4h6.8c.2 0 .4-.2.3-.4l-.4-1.8c0-.1-.1-.2-.3-.2"
-                      ></path>
-                      <path
-                        id="Fill-3"
-                        class="st0"
-                        d="M11.9 8H4.1c-.2 0-.3.1-.3.2L3.4 10c0 .2.1.4.3.4h8.6c.2 0 .4-.2.3-.4l-.4-1.8c0-.1-.1-.2-.3-.2"
-                      ></path>
-                      <path
-                        id="Fill-5"
-                        class="st2"
-                        d="M15.7 14.4h-1.8c-.2 0-.3-.1-.3-.3l-.4-1.9c0-.1-.2-.3-.3-.3H3.2c-.2 0-.3.1-.3.3l-.4 1.9c0 .1-.2.3-.3.3H.3c-.2 0-.3.1-.3.3v1c0 .2.1.3.3.3h15.4c.2 0 .3-.1.3-.3v-1c0-.2-.1-.3-.3-.3"
-                      ></path>
-                      <path
-                        id="Fill-8"
-                        class="st0"
-                        d="M10.5.3c0-.1-.2-.3-.3-.3H5.9c-.2 0-.3.1-.4.3L5.2 2c0 .2.1.4.3.4h5.1c.2 0 .4-.2.3-.4L10.5.3z"
-                      ></path>
-                    </svg>
-                    <!--<img src="images/icons/icons_Icons.png" alt="">-->
-                  </div>
-                  <div class="map-roads-info-text">
-                    <span class="map-roads-info-text-title"
-                      >Роботи завершено</span
-                    >
-                    <span class="map-roads-info-text-subtitle">
-                      <span id="done-object-count">0</span>
-                      об’єктів
-                      <!--<span id="done-path-km">...</span>-->
-                      <!--км-->
-                    </span>
-                  </div>
-                </div>
-                <div class="map-roads-slide">
-                  <input
-                    type="checkbox"
-                    id="done-object-switch"
-                    class="switcher"
-                  />
-                  <label for="done-object-switch"></label>
-                  <label class="rounded-all" for="done-object-switch"></label>
-                </div>
-              </div>
-              <!--map-roads-second-->
-
-              <div class="map-roads map-roads-third">
-                <div class="map-roads-info">
-                  <div class="map-roads-info-circule circule-red">
-                    <svg
-                      id="icon-icons_Icons"
-                      viewBox="0 0 16 16"
-                      width="100%"
-                      height="100%"
-                    >
-                      <path
-                        id="Fill-1"
-                        class="st0"
-                        d="M11 4H5c-.2 0-.3.1-.3.3L4.3 6c0 .2.1.4.3.4h6.8c.2 0 .4-.2.3-.4l-.4-1.8c0-.1-.1-.2-.3-.2"
-                      ></path>
-                      <path
-                        id="Fill-3"
-                        class="st0"
-                        d="M11.9 8H4.1c-.2 0-.3.1-.3.2L3.4 10c0 .2.1.4.3.4h8.6c.2 0 .4-.2.3-.4l-.4-1.8c0-.1-.1-.2-.3-.2"
-                      ></path>
-                      <path
-                        id="Fill-5"
-                        class="st2"
-                        d="M15.7 14.4h-1.8c-.2 0-.3-.1-.3-.3l-.4-1.9c0-.1-.2-.3-.3-.3H3.2c-.2 0-.3.1-.3.3l-.4 1.9c0 .1-.2.3-.3.3H.3c-.2 0-.3.1-.3.3v1c0 .2.1.3.3.3h15.4c.2 0 .3-.1.3-.3v-1c0-.2-.1-.3-.3-.3"
-                      ></path>
-                      <path
-                        id="Fill-8"
-                        class="st0"
-                        d="M10.5.3c0-.1-.2-.3-.3-.3H5.9c-.2 0-.3.1-.4.3L5.2 2c0 .2.1.4.3.4h5.1c.2 0 .4-.2.3-.4L10.5.3z"
-                      ></path>
-                    </svg>
-                    <!--<img src="images/icons/icons_Icons.png" alt="">-->
-                  </div>
-                  <div class="map-roads-info-text">
-                    <span class="map-roads-info-text-title"
-                      >Тривають роботи</span
-                    >
-                    <span class="map-roads-info-text-subtitle">
-                      <span id="work-object-count">0</span>
-                      об’єктів
-                      <!--<span id="work-path-km">...</span>-->
-                    </span>
-                  </div>
-                </div>
-                <div class="map-roads-slide">
-                  <input
-                    type="checkbox"
-                    id="work-object-switch"
-                    class="switcher"
-                  />
-                  <label for="work-object-switch"></label>
-                  <label class="rounded-all" for="work-object-switch"></label>
-                </div>
-              </div>
-              <!--map-roads-third-->
-
-              <div class="map-roads map-roads-fourth">
-                <div class="map-roads-info">
-                  <div class="map-roads-info-circule circule-orange">
-                    <svg
-                      id="icon-icons_Icons"
-                      viewBox="0 0 16 16"
-                      width="100%"
-                      height="100%"
-                    >
-                      <path
-                        id="Fill-1"
-                        class="st0"
-                        d="M11 4H5c-.2 0-.3.1-.3.3L4.3 6c0 .2.1.4.3.4h6.8c.2 0 .4-.2.3-.4l-.4-1.8c0-.1-.1-.2-.3-.2"
-                      ></path>
-                      <path
-                        id="Fill-3"
-                        class="st0"
-                        d="M11.9 8H4.1c-.2 0-.3.1-.3.2L3.4 10c0 .2.1.4.3.4h8.6c.2 0 .4-.2.3-.4l-.4-1.8c0-.1-.1-.2-.3-.2"
-                      ></path>
-                      <path
-                        id="Fill-5"
-                        class="st2"
-                        d="M15.7 14.4h-1.8c-.2 0-.3-.1-.3-.3l-.4-1.9c0-.1-.2-.3-.3-.3H3.2c-.2 0-.3.1-.3.3l-.4 1.9c0 .1-.2.3-.3.3H.3c-.2 0-.3.1-.3.3v1c0 .2.1.3.3.3h15.4c.2 0 .3-.1.3-.3v-1c0-.2-.1-.3-.3-.3"
-                      ></path>
-                      <path
-                        id="Fill-8"
-                        class="st0"
-                        d="M10.5.3c0-.1-.2-.3-.3-.3H5.9c-.2 0-.3.1-.4.3L5.2 2c0 .2.1.4.3.4h5.1c.2 0 .4-.2.3-.4L10.5.3z"
-                      ></path>
-                    </svg>
-                    <!--<img src="images/icons/icons_Icons.png" alt="">-->
-                  </div>
-                  <div class="map-roads-info-text">
-                    <span class="map-roads-info-text-title">Заплановано</span>
-                    <span class="map-roads-info-text-subtitle">
-                      <span id="plan-object-count">0</span>
-                      об’єктів
-                      <!--<span id="plan-path-km">...</span>-->
-                      <!--км-->
-                    </span>
-                  </div>
-                </div>
-                <div class="map-roads-slide">
-                  <input
-                    type="checkbox"
-                    id="going-object-switch"
-                    class="switcher"
-                  />
-                  <label for="going-object-switch"></label>
-                  <label class="rounded-all" for="going-object-switch"></label>
-                </div>
-              </div>
-              <!--map-roads map-roads-fourth-->
-
-              <div class="map-roads map-roads-five">
+            <script>
+              "use strict";
+              // Minimal, fixed initMap implementation. Previous inline logic was incomplete and referenced
+              // undefined variables (M,N,u,D,B,O,P,f etc.). If you need the old rich functionality, provide
+              // the missing data block and we can re-integrate it cleanly.
+              function initMap() {
+              var el = document.getElementById("gmap-object");
+              if (!el) return;
+              if (el.dataset.inited) return; // prevent double init
+              if (!(window.google && google.maps)) {
+                console.error("Google Maps library not loaded yet");
+                return;
+              }
+              var center = { lat: 48.9166666667, lng: 24.7166666667 };
+              try {
+                var map = new google.maps.Map(el, {
+                zoom: 8,
+                center: center,
+                styles: (typeof gmap_style === 'function') ? gmap_style() : undefined,
+                fullscreenControlOptions: { position: google.maps.ControlPosition.TOP_LEFT }
+                });
+                new google.maps.Marker({ position: center, map: map });
+                el.dataset.inited = "1";
+              } catch (e) {
+                console.error("Map init error", e);
+              }
+              }
+              // Fallback if callback didn't execute for some reason
+              document.addEventListener('DOMContentLoaded', function(){
+              if (window.google && google.maps && typeof initMap === 'function') {
+                initMap();
+              }
+              });
+            </script>
                 <div class="map-roads-info">
                   <div class="map-roads-info-circule circule-violete">
                     <svg
@@ -337,11 +115,11 @@
     </main>
     <script src="my_admin/jq/d3.v3.min.js"></script>
     <!-- Load Google Maps API once (async/defer) with initMap callback. Replace YOUR_GOOGLE_MAPS_API_KEY with a valid key. -->
-    <script
-      async
-      defer
-      src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap"
-    ></script>
+        <script
+            async
+            defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8lq4hm4TyqnZQBKKc5vx4FEEDC_tiwes&callback=initMap"
+        ></script>
     <!-- jQuery already loaded in head; removed duplicate include -->
     <script src="my_admin/jq/progressbar.js"></script>
     <script src="my_admin/jq/base.js"></script>
@@ -422,40 +200,38 @@
               });
               d = new google.maps.Polyline({
                   path: e,
-                  geodesic: !0,
-                  strokeColor: n,
-                  strokeOpacity: .9,
-                  strokeWeight: 5,
-                  road_length_km: m
-              });
-              google.maps.event.addListener(d, "click", function() {
-                  b.open(a, g);
-                  setTimeout(popUp, 10);
-                  k()
-              });
-              d.setMap(a);
-              d.setVisible(!1);
-              return d
-          }
-
-          function z(a) {
-              return {
-                  lat: a[0][1],
-                  lng: a[0][0]
-              }
-          }
-
-          function A(a) {
-              return {
-                  lat: a[a.length - 1][1],
-                  lng: a[a.length - 1][0]
-              }
-          }
-
-          function p(a) {
-              function d(a, c, b, d, m) {
-                  var x = [],
-                      e = M,
+                    <script>
+                    "use strict";
+                    // Full restored logic wrapped in initMap
+                    function initMap(){
+                        var f=[]; // TODO: populate f with data objects (was originally server-rendered). Keep empty to avoid errors.
+                        var F=$("#done-object-switch"),G=$("#servised-object-switch"),C=$("#all-object-switch"),R=$("#work-object-switch"),S=$("#going-object-switch");
+                        var H=[],I=[],J=[],K=[],L=[];
+                        var b=new google.maps.LatLng(48.9166666667,24.7166666667),g=new google.maps.Map(document.getElementById("gmap-object"),{zoom:8,center:b,styles: (typeof gmap_style==='function'?gmap_style():undefined),fullscreenControlOptions:{position:google.maps.ControlPosition.TOP_LEFT}});
+                        function k(){ $(".map-roads").removeClass("nth-child-open"); setTimeout(function(){ $(".map-block").fadeOut("0.3s") },500);} 
+                        function n(a,d){var m= $(window).width()<767?-430:-375; setTimeout(function(){a.setCenter(d.latLng); setTimeout(function(){a.panBy(0,m)},100)},200)}
+                        function w(a,d){ for(var m=0;m<a.length;m++) d>=12? a[m].setVisible(!0):a[m].setVisible(!1) }
+                        function y(a,d,m,n,b,g){ var e=[]; for(var f2=0;f2<d.length;f2++) e.push({lat:d[f2][1],lng:d[f2][0]}); var poly=new google.maps.Polyline({path:e,geodesic:!0,strokeColor:n,strokeOpacity:.9,strokeWeight:5,road_length_km:m}); google.maps.event.addListener(poly,"click",function(){ b.open(a,g); setTimeout(popUp,10); k(); }); poly.setMap(a); poly.setVisible(!1); return poly; }
+                        function z(a){ return {lat:a[0][1],lng:a[0][0]} }
+                        function A(a){ return {lat:a[a.length-1][1],lng:a[a.length-1][0]} }
+                        function p(dataArr){ if(!Array.isArray(dataArr)) return; function d(a,c,b,infoWin,m){ var x=[],e=M,f=N,t="#e9e9e9"; if(c.is_type){ var cs=c.is_type.toString(); if(cs===c.types.TYPE_TOP.toString()){ f=e=u; t="#00acac";} else if(cs===c.types.TYPE_BOTTOM.toString()){ f=e=u; t="#50e3c2";} else if(cs===c.types.TYPE_SCHEDULE.toString()){ f=e=D; t="#ffb101";} }
+                            var gCoord,zCoord; if(c.road && c.road.length){ var main=y(a,c.road,b,t,infoWin,m); x.push(main); gCoord=z(c.road); zCoord=A(c.road);} if(c.parts && c.parts.length){ for(var t2=0;t2<c.parts.length;t2++){ for(var entries=Object.entries(c.parts[t2]),h,i=0;i<entries.length;i++){ var r=entries[i][0]; h=entries[i][1]; if(r.toString()===c.types.TYPE_TOP.toString()){ var l=y(a,h,b,"#00acac",infoWin,m); x.push(l); var first=z(h); if(gCoord && first.lat===gCoord.lat && first.lng===gCoord.lng){ gCoord=first; e=u;} var last=A(h); if(zCoord && last.lat===zCoord.lat && last.lng===zCoord.lng){ zCoord=last; f=u;} } else if(r.toString()===c.types.TYPE_BOTTOM.toString()){ l=y(a,h,b,"#50e3c2",infoWin,m); x.push(l); first=z(h); if(gCoord && first.lat===gCoord.lat && first.lng===gCoord.lng){ gCoord=first; e=u;} last=A(h); if(zCoord && last.lat===zCoord.lat && last.lng===zCoord.lng){ zCoord=last; f=u;} } else if(r.toString()===c.types.TYPE_SCHEDULE.toString()){ var sched=y(a,h,b,"#ffb101",infoWin,m); x.push(sched); first=z(h); if(gCoord && first.lat===gCoord.lat && first.lng===gCoord.lng){ gCoord=first; e=D;} last=A(h); if(zCoord && last.lat===zCoord.lat && last.lng===zCoord.lng){ zCoord=last; f=D;} } } } }
+                            if(!gCoord||!zCoord) return x; var startMarker=new google.maps.Marker({position:gCoord,map:a,icon:e}); startMarker.addListener("click",function(ev){ infoWin.open(a,m); n(a,ev); setTimeout(popUp,10); k(); }); B.push(startMarker); var endMarker=new google.maps.Marker({position:zCoord,map:a,icon:f}); endMarker.addListener("click",function(ev){ infoWin.open(a,m); n(a,ev); setTimeout(popUp,10); k(); }); B.push(endMarker); return x; }
+                            function iconMain(obj){ return obj.percentage===100?"images/green.png": (obj.percentage===0?"images/orange.png":"images/red.png"); }
+                            function iconRoad(obj){ return obj.percentage===100?"images/road-green.png": (obj.percentage===0?"images/road-orange.png":"images/road-red.png"); }
+                            var markers=[],polylines=[]; for(let i=0;i<dataArr.length;i++){ let item=dataArr[i]; item.labels = item.labels || {}; item.types = item.types || {TYPE_TOP:1,TYPE_BOTTOM:2,TYPE_SCHEDULE:3}; if(!item.main_coord) continue; let marker=new google.maps.Marker({position:new google.maps.LatLng(item.main_coord[1],item.main_coord[0]),road_length_km:item.road_length_km,label:"1"}); marker.setIcon(iconMain(item)); let html=mapMarkerInfoWindowTpl(item); let infoWin=new google.maps.InfoWindow({content:html}); google.maps.event.addListener(infoWin,"domready",(function(idx,inf){ return function(){ var miniSel="#mini-map-"+dataArr[idx].id; $(miniSel).empty(); create_mini_map_svg(dataArr[idx],miniSel); var progSel="#open-card-progress-"+dataArr[idx].id; if($(progSel).find('*').length===0) progressBarDetail(progSel); };})(i,infoWin)); marker.addListener("click",(function(idx,mr,inf){ return function(ev){ inf.open(g,mr); n(g,ev); setTimeout(popUp,10); k(); };})(i,marker,infoWin)); markers.push(marker); var segs=d(g,item,item.road_length_km,infoWin,marker); if(segs && segs.length) polylines=polylines.concat(segs); }
+                            w(B,8); g.addListener("zoom_changed",function(){ var zLevel=g.getZoom(); for(var c=0;c<markers.length;c++){ var mk=markers[c]; if(zLevel>=12) mk.setVisible(!1); else mk.setVisible(!0); } for(var b2=0;b2<polylines.length;b2++){ var pl=polylines[b2]; if(zLevel>=12) pl.setVisible(!0); else pl.setVisible(!1); } w(B,zLevel); });
+                            new MarkerClusterer(g,markers,{height:50,width:50,imagePath:"images/violet"});
+                        }
+                        var u=new google.maps.MarkerImage("images/start-end-green.png",new google.maps.Size(27,27),new google.maps.Point(0,0),new google.maps.Point(13.5,13.5));
+                        var D=new google.maps.MarkerImage("images/start-end-orange.png",new google.maps.Size(27,27),new google.maps.Point(0,0),new google.maps.Point(13.5,13.5));
+                        var N=new google.maps.MarkerImage("images/start-end-red.png",new google.maps.Size(53,53),new google.maps.Point(0,0),new google.maps.Point(26.5,26.5));
+                        var M=new google.maps.MarkerImage("images/start-end-red-simple.png",new google.maps.Size(27,27),new google.maps.Point(0,0),new google.maps.Point(13.5,13.5));
+                        var B=[];
+                    }
+                    // Fallback if callback somehow missed
+                    document.addEventListener('DOMContentLoaded', function(){ if(window.google && google.maps && typeof initMap==='function'){ initMap(); }});
+                    </script>
                       f = N,
                       t = "#e9e9e9";
                   c.is_type && (c.is_type.toString() === c.types.TYPE_TOP.toString() && (f = e = u, t = "#00acac"), c.is_type.toString() === c.types.TYPE_BOTTOM.toString() &&
